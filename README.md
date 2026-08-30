@@ -25,7 +25,7 @@ This project demonstrates an end-to-end data analytics workflow. Raw retail orde
            v
   +------------------+
   | MySQL Database   |  --> Run complex SQL queries using CTEs, Window 
-  | (`orders_DB`)    |      Functions, and conditional aggregations
+  | (`orders_DB`)    |      Functions, and conditional aggregations```
   +------------------+
 
 ##  Key SQL Insights & Business Queries
