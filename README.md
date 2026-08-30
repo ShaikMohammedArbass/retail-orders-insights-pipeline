@@ -28,32 +28,15 @@ This project demonstrates an end-to-end data analytics workflow. Raw retail orde
   | (`orders_DB`)    |      Functions, and conditional aggregations
   +------------------+
 
-## Key SQL Insights & Business Queries
+Key SQL Insights & Business Queries
 The analysis focuses on essential performance metrics using advanced SQL techniques:
-* **Top 10 Revenue Products**: Aggregating sales by product ID to identify top grossing items.
-* **Top 5 Products per Region**: Using CTEs and `ROW_NUMBER()` window functions to rank performance per region.
-* **Month-over-Month YoY Growth (2022 vs 2023)**: Aggregating sales with conditional `CASE WHEN` logic to compare monthly sales side-by-side.
-* **Peak Category Performance**: Pinpointing highest sales months per product category using ranking window functions.
-* **Highest YoY Profit Growth by Sub-Category**: Calculating absolute profit delta between 2022 and 2023 to identify growth drivers.
 
----
+Top 10 Revenue Products: Aggregating sales by product ID to identify top grossing items.
 
-## Project Structure
-* `Sales_Data_Cleaning_ETL.ipynb` - Jupyter Notebook containing data ingestion, cleaning, transformation, and database export logic.
-* `Sales_Performance_Queries.sql` - SQL script containing data modeling setup and analytics queries.
+Top 5 Products per Region: Using CTEs and ROW_NUMBER() window functions to rank performance per region.
 
----
+Month-over-Month YoY Growth (2022 vs 2023): Aggregating sales with conditional CASE WHEN logic to compare monthly sales side-by-side.
 
-## Technical Stack
-* **Languages**: Python 3.x, SQL
-* **Libraries**: Pandas, SQLAlchemy, PyMySQL
-* **Database Engine**: MySQL Server
-* **Development Environment**: Jupyter Notebook
+Peak Category Performance: Pinpointing highest sales months per product category using ranking window functions.
 
----
-
-## How to Run
-
-1. Clone this repository to your local machine:
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+Highest YoY Profit Growth by Sub-Category: Calculating absolute profit delta between 2022 and 2023 to identify growth drivers.
