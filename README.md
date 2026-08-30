@@ -28,7 +28,7 @@ This project demonstrates an end-to-end data analytics workflow. Raw retail orde
   | (`orders_DB`)    |      Functions, and conditional aggregations
   +------------------+
 
-Key SQL Insights & Business Queries
+#Key SQL Insights & Business Queries
 The analysis focuses on essential performance metrics using advanced SQL techniques:
 
 Top 10 Revenue Products: Aggregating sales by product ID to identify top grossing items.
