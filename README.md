@@ -29,9 +29,4 @@ This project demonstrates an end-to-end data analytics workflow. Raw retail orde
 
 ---
 
-## How to Run
-1. Clone this repository.
-2. Ensure MySQL Server is running locally.
-3. Update connection string parameters in the Python script:
-   ```python
-   engine = sal.create_engine('mysql+pymysql://<user>:<password>@localhost:3306/orders_DB')
+
