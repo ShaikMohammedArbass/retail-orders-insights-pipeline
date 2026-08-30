@@ -5,26 +5,28 @@ This project demonstrates an end-to-end data analytics workflow. Raw retail orde
 ---
 
 ## Data Pipeline Architecture
-+------------------+
-|  Raw CSV Dataset |
-+--------+---------+
-|
-v
-+------------------+
-| Python / Pandas  |  --> Clean missing values, standardize schema,
-+--------+---------+      and calculate discount, sale price, & profit
-|
-v
-+------------------+
-| SQLAlchemy /     |  --> Export cleaned dataset to local MySQL database
-| PyMySQL Engine   |
-+--------+---------+
-|
-v
-+------------------+
-| MySQL Database   |  --> Run complex SQL queries using CTEs, Window
-| (orders_DB)    |      Functions, and conditional aggregations
-+------------------+
+
+```text
+  +------------------+
+  |  Raw CSV Dataset |
+  +--------+---------+
+           |
+           v
+  +------------------+
+  | Python / Pandas  |  --> Clean missing values, standardize schema,
+  +--------+---------+      and calculate discount, sale price, & profit
+           |
+           v
+  +------------------+
+  | SQLAlchemy /     |  --> Export cleaned dataset to local MySQL database
+  | PyMySQL Engine   |
+  +--------+---------+
+           |
+           v
+  +------------------+
+  | MySQL Database   |  --> Run complex SQL queries using CTEs, Window 
+  | (`orders_DB`)    |      Functions, and conditional aggregations
+  +------------------+
 
 ## Key SQL Insights & Business Queries
 The analysis focuses on essential performance metrics using advanced SQL techniques:
